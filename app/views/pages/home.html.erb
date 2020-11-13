@@ -1,4 +1,32 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
 
 
+<!-- navbar -->
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="#">
+    <img src="https://media.istockphoto.com/vectors/cocktail-sketch-hand-drawing-vector-illustration-vector-id867757654" />
+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Cocktails", cocktails_path, class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- banner -->
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1582837611539-e3020079eab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);">
+  <div class="container">
+    <h1>Cocktail Recipes</h1>
+    <p>Feeling thirsty? Check out our recipes</p>
+    <!-- <a class="btn btn-flat" href="#">Click here</a> -->
+    <%= link_to "Cocktails", cocktails_path, class: "btn btn-success" %>
+  </div>
+</div>
