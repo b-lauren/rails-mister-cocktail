@@ -1,36 +1,18 @@
 <h2 class="text-center p-4 display-4">Cocktail Menu</h2>
 
-<!-- one that works -->
-
-<!-- <div class="container">
-  <div class="cards">
-  <% @cocktails.each do |cocktail| %>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" alt="Card image cap">
-
-      <div class="card-body">
-      <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %> </h5>
-    </div>
-  </div>
-  <% end %>
-</div>
- -->
-<!-- test  -->
 
 <div class="container">
-  <div class="cards">
+  <div class="cards rounded card-img-top">
   <% @cocktails.each do |cocktail| %>
-    <div class="card" style="width: 18rem;">
-      <%= cl_image_tag cocktail.photo.key, width: 400, height: 300, crop: :fill %>
+    <div class="card text-center" style="width: 19rem;">
+      <%= cl_image_tag cocktail.photo.key, width: 302, height: 200, crop: :fill %>
         <div class="card-body">
-          <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %> </h5>
+          <h5 class="card-title"><%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %> </h5>
          </div>
     </div>
   <% end %>
 </div>
 
-
-<!-- img class="card-img-top" -->
 
 
   <h3>Add your favourite cocktail</h3>
