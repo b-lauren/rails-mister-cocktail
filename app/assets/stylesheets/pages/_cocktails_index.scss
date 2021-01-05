@@ -1,4 +1,38 @@
+.home-link {
+  font-size: 1.5rem;
+  padding: 8px 0 0 16px;
+  color: $dark-green;
+  font-weight: bold;
+  display:inline-block;
+  &:hover {
+    text-decoration: none;
+    color: $dark-green;
+    opacity: 0.9;
+  }
+}
+
+.cock-index-banner {
+  width: 100%;
+  background: $lilac;
+  height: 200px;
+  margin: 0;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.art {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+            8px 8px $dark-green,
+            20px 20px #1f1f1f;
 }
