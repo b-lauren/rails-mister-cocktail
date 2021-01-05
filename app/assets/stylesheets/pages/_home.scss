@@ -116,6 +116,14 @@ h2 {
   .footer-copyright {
     font-size: 12px;
   }
+
+  .site-info {
+    margin: 40px 0;
+  }
+
+  i {
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -123,6 +131,11 @@ h2 {
   .main-header {
     margin-top: 100px;
     margin-bottom: 50px;
+  }
+
+  .martini-section {
+    display: flex;
+    justify-content: center;
   }
 }
 
