@@ -20,7 +20,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   margin-top: 45px;
 }
 
@@ -36,6 +36,22 @@
   text-shadow:
             8px 8px $dark-green,
             20px 20px #1f1f1f;
+}
+
+// testing out new cards
+.index-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.cocktail-img {
+  background-size: cover;
+  object-fit: cover;
+}
+
+.cocktail-card {
+  border-radius: 5%;
 }
 
 // Media queries
