@@ -21,6 +21,7 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 45px;
 }
 
 .art {
@@ -35,4 +36,23 @@
   text-shadow:
             8px 8px $dark-green,
             20px 20px #1f1f1f;
+}
+
+// Media queries
+@media (max-width: 720px) {
+  .home-link {
+    font-size: 22px;
+  }
+
+  .art {
+    font-size: 38px;
+    top: 12%;
+    text-shadow:
+            8px 8px $dark-green,
+            12px 10px #1f1f1f;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
