@@ -18,12 +18,6 @@
   margin: 0;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-top: 45px;
-}
-
 .art {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
@@ -38,21 +32,48 @@
             20px 20px #1f1f1f;
 }
 
-// testing out new cards
 .index-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 60px;
 }
-
 
 .cocktail-img {
   background-size: cover;
   object-fit: cover;
+  border-radius: 8px;
 }
 
-.cocktail-card {
-  border-radius: 5%;
+.cocktail-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  flex-wrap: wrap;
 }
+
+.card-content {
+  margin: 25px;
+}
+
+.card-text {
+  background: $peachy-orange;
+  border-radius: 8px;
+}
+
+.card-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 12px;
+  padding: 10px;
+  a {
+    color: $dark-green;
+    letter-spacing: 0.1em;
+  }
+}
+
+.marg {
+  margin-top: 500px;
+}
+
 
 // Media queries
 @media (max-width: 720px) {
@@ -71,4 +92,18 @@
   .cards {
     grid-template-columns: 1fr;
   }
+
+  .cocktail-cards {
+    flex-direction: column;
+  }
+
+  .cocktail-img {
+    width: 280px;
+    height: 180px;
+  }
+
+  .card-title {
+    padding: 6px;
+  }
+
 }
