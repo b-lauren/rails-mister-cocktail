@@ -1,6 +1,10 @@
 <div class="cock-index-banner">
   <%= link_to "No26", root_path, class: "home-link" %>
   <span class="art">Cocktails</span>
+  <div class="banner-text">
+    <p>Check out best recipes. Can't see your favourite tipple on our list? Add it below!</p>
+    <button id="add-cocktail">Add Cocktail</button>
+  </div>
 </div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E4C7CE" fill-opacity="1" d="M0,320L1440,96L1440,0L0,0Z"></path></svg>
 
@@ -17,5 +21,6 @@
   </div>
 </div>
 
-<h3 class="marg">Can't See Your Favourite Cocktail?</h3>
+<a href="add-cocktail">Add Cocktail</a>
+<h3 class="marg" src="add-cocktail">Can't See Your Favourite Cocktail?</h3>
 <%= link_to "🍹 Add Yours🍹", new_cocktail_path %>
