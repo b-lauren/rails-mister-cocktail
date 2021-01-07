@@ -20,10 +20,10 @@
 
 .art {
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // position: absolute;
+  // top: 20%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   font-size: 120px;
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
@@ -34,12 +34,28 @@
 
 .banner-text {
   position: absolute;
-  top: 34%;
-  left: 28%;
+  top: 6%;
+  left: 24%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Work Sans", "Helvetica", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5;
+  color: $dark-green;
+}
+
+.new-button {
+  background: $peachy-orange;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-top: 14px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+  }
 }
 
 .index-container {
