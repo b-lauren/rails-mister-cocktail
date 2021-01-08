@@ -55,7 +55,7 @@
 }
 
 .index-container {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .cocktail-img {
@@ -79,6 +79,7 @@
 .card-text {
   background: $peachy-orange;
   border-radius: 8px;
+  // border: 2px solid $dark-green;
 }
 
 .card-title {
@@ -100,32 +101,39 @@
 
 @media (max-width: 720px) {
   .home-link {
-    font-size: 22px;
+    font-size: 20px;
   }
-
   .art {
-    font-size: 38px;
+    font-size: 40px;
     top: 12%;
     text-shadow:
             8px 8px $dark-green,
             12px 10px #1f1f1f;
   }
-
+  .banner-text {
+    left: 14%;
+    align-items: left;
+    p {
+      font-size: 14px;
+      max-width: 260px;
+    }
+    a {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
   .cards {
     grid-template-columns: 1fr;
   }
-
   .cocktail-cards {
     flex-direction: column;
   }
-
   .cocktail-img {
     width: 280px;
     height: 180px;
   }
-
   .card-title {
     padding: 6px;
+    font-size: 1rem;
   }
-
 }
