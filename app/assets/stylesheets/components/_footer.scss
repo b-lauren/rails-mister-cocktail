@@ -19,15 +19,17 @@
 }
 .footer-links a {
   color: black;
-  opacity: 0.15;
+  // opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .footer-copyright {
-  color: #1b1c1e;
+  color: #000;
+  letter-spacing: 3px;
+  font-size: 18px;
 }

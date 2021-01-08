@@ -20,10 +20,6 @@
 
 .art {
   font-family: 'Montserrat', sans-serif;
-  // position: absolute;
-  // top: 20%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
   font-size: 120px;
   letter-spacing: 0.1em;
   -webkit-text-fill-color: transparent;
@@ -100,8 +96,8 @@
   margin-top: 500px;
 }
 
-
 // Media queries
+
 @media (max-width: 720px) {
   .home-link {
     font-size: 22px;
