@@ -8,9 +8,9 @@
 
 <div class="new-cocktail-form">
   <%= simple_form_for @cocktail do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-     <%= f.input :photo, as: :file %>
-    <%= f.submit %>
+    <%= f.label :name, class: "label" %>
+    <%= f.text_field :name, placeholder: "Aperol Spritz" %>
+     <%= f.input "Upload a photo", as: :file, class: "label" %>
+    <%= f.submit "Add Cocktail", class: "add-button"%>
   <% end %>
 </div>
