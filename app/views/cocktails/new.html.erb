@@ -1,19 +1,16 @@
 <div class="new-index-banner">
   <%= link_to "No26", root_path, class: "home-link", id: "lilac-link" %>
-  <%= link_to "OUR COCKTAILS", root_path, class: "home-link", id: "lilac-link" %>
+  <%= link_to "OUR COCKTAILS", cocktails_path, class: "link", id: "lilac-link" %>
   <div class="banner-content">
     <span class="art-new">Add a Cocktail...</span>
   </div>
 </div>
 
-
-
-
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-   <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
-
-<%= link_to "Go back to menu", cocktails_path %>
+<div class="new-cocktail-form">
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+     <%= f.input :photo, as: :file %>
+    <%= f.submit %>
+  <% end %>
+</div>
