@@ -1,0 +1,22 @@
+.new-index-banner {
+  width: 100%;
+  background: $dark-green;
+  height: 275px;
+}
+
+#lilac-link {
+  color: $lilac;
+}
+
+.art-new {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+            8px 8px $lilac,
+            20px 20px #000;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

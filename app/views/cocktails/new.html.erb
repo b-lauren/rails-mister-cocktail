@@ -1,4 +1,13 @@
-<h2>Add a new cocktail</h2>
+<div class="new-index-banner">
+  <%= link_to "No26", root_path, class: "home-link", id: "lilac-link" %>
+  <%= link_to "OUR COCKTAILS", root_path, class: "home-link", id: "lilac-link" %>
+  <div class="banner-content">
+    <span class="art-new">Add a Cocktail...</span>
+  </div>
+</div>
+
+
+
 
 <%= simple_form_for @cocktail do |f| %>
   <%= f.label :name %>
