@@ -30,7 +30,7 @@
 }
 
 .new-cocktail-form {
-  // background: $lilac;
+  background: $lilac;
   // background-image: linear-gradient(to right, $lilac , $peachy-orange);
   width: 37%;
   margin: 0 auto;
@@ -38,19 +38,26 @@
   padding: 30px;
   border: 3px solid $lilac;
   border-radius: 30px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   input {
-    color: red;
-    label {
-      color: red;
-    }
+    color: $dark-green;
   }
 }
 
 .label {
-  color: red;
+  color: $dark-green;
 }
 
 .add-button {
-  background: black;
-  color: white;
+  background: $peachy-orange;
+  color: $dark-green;
+  border: 0px;
+  padding: 4px 6px;
+  border-radius: 4px;
+    &:hover {
+      opacity: 0.8;
+    }
 }
