@@ -1,0 +1,21 @@
+#main-navbar {
+  font-weight: 100;
+  background-color: $dark-green;
+}
+
+#main-navbar .nav-link {
+  color: white;
+}
+
+#main-navbar .nav-link:hover {
+  color: $peachy-orange;
+}
+
+#main-navbar .navbar-brand {
+  color: $peachy-orange;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  padding-top: -3px;
+}
