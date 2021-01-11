@@ -1,0 +1,16 @@
+<nav id="main-navbar" class="navbar navbar-dark navbar-expand-md fixed-top">
+    <%= link_to "No26", root_path, class: "navbar-brand"  %>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "OUR COCKTAILS", cocktails_path, class: "nav-link" %>
+        </li>
+         <li class="nav-item">
+          <%= link_to "ADD A COCKTAIL", new_cocktail_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </nav>
