@@ -1,7 +1,7 @@
 .cock-index-banner {
   width: 100%;
   background: $lilac;
-  height: 200px;
+  height: 280px;
   margin: 0;
 }
 
@@ -17,7 +17,7 @@
 
 .banner-text {
   position: absolute;
-  top: 6%;
+  top: 14%;
   left: 24%;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,13 @@
   background-size: cover;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  &:hover {
+    top: -10px;
+  }
 }
 
 .cocktail-cards {
@@ -66,7 +73,13 @@
 .card-text {
   background: $peachy-orange;
   border-radius: 8px;
-  // border: 2px solid $dark-green;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  a {
+    text-decoration: none;
+  }
+    &:hover {
+      opacity: 0.9;
+    }
 }
 
 .card-title {
