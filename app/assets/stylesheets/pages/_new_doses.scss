@@ -1,0 +1,91 @@
+.new-dose-banner {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    p {
+      font-size: 1.25rem;
+      margin-top: 20px;
+      color: $dark-green;
+    }
+}
+
+.artwork {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6rem;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+  // margin: 0 auto;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+            8px 8px $peachy-orange,
+            20px 20px #1f1f1f;
+}
+
+.new-dose-container {
+  width: 40%;
+  margin: 0 auto 60px auto;
+  padding: 40px;
+  border: 1px solid $dark-green;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    input[type=submit] {
+      background: $dark-green;
+      border: 0;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      padding: 10px 0;
+      width: 100%;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+      a {
+        background: $lilac;
+        text-align: center;
+        display: block;
+        color: $dark-green;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px 0;
+
+        &:hover {
+          text-decoration: none;
+          opacity: 0.9;
+        }
+      }
+}
+
+@media only screen and (max-width: 600px) {
+  .artwork {
+    font-size: 4rem;
+  }
+
+  .new-dose-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .artwork {
+    font-size: 4rem;
+    overflow-wrap: normal;
+  }
+
+  .new-dose-banner p {
+    font-size: 1rem;
+    overflow-wrap: normal;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .new-dose-banner {
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+  }
+}
