@@ -99,6 +99,13 @@
 
 // Media queries
 
+// @media (max-width: 1024px) {
+//   .banner-text {
+//     top: 4%;
+//     width: 60%;
+//   }
+// }
+
 @media (max-width: 720px) {
   .home-link {
     font-size: 20px;
@@ -111,8 +118,9 @@
             12px 10px #1f1f1f;
   }
   .banner-text {
-    left: 14%;
-    align-items: left;
+    // left: 14%;
+    align-items: center;
+    width: 54%;
     p {
       font-size: 14px;
       max-width: 260px;

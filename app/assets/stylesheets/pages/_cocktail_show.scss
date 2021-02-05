@@ -1,0 +1,80 @@
+.show-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cocktail-show-card {
+  margin-top: 100px;
+  color: $orange;
+  display: flex;
+  padding: 20px;
+  background: rgba( 228, 199, 206, 0.60 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  a {
+    color: #000;
+  }
+
+  img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 350px;
+    height: 300px;
+  }
+}
+
+.show-information {
+  width: 22rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 30px;
+    color: $dark-green;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+}
+
+.show-controls {
+  width: 22rem;
+}
+
+.add-ingredient {
+  background: $peachy-orange;
+  display: block;
+  width: 60%;
+  margin: 25px auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 800px) {
+  .cocktail-show-card {
+    flex-direction: column-reverse;
+  }
+  .show-container {
+    margin-bottom: 80px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .cocktail-show-card {
+    max-width: 80%;
+  }
+}
+
